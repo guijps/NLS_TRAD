@@ -1,0 +1,90 @@
+STRINGTABLE
+BEGIN
+    /* Fields added with WebLIMS Ordering */
+    HL7_TEMPLATE.T_HL7_SEND_MODE	"Modo de envio HL7"
+    HL7_TEMPLATE.T_HL7_TEMPLATE_IN	"Modelo HL7 em"
+
+    PATIENT.T_INS1_ADDRESS1	"Endereço Ins1"
+    PATIENT.T_INS1_CITY		"Ins1 Cidade"
+    PATIENT.T_INS1_GROUP_NO	"Grupo Ins1 Nº"
+    PATIENT.T_INS1_NAME		"Nome Ins1"
+    PATIENT.T_INS1_POLICY_NO	"Política Ins1 Não"
+    PATIENT.T_INS1_STATE	"Estado Ins1"
+    PATIENT.T_INS1_TYPE		"Tipo Ins1"
+    PATIENT.T_INS1_ZIP		"Ins1 CEP"
+
+    PATIENT.T_INS2_ADDRESS1	"Endereço Ins2"
+    PATIENT.T_INS2_CITY		"Cidade Ins2"
+    PATIENT.T_INS2_GROUP_NO	"Grupo Ins2 Nº"
+    PATIENT.T_INS2_NAME		"Nome Ins2"
+    PATIENT.T_INS2_POLICY_NO	"Política Ins2 Não"
+    PATIENT.T_INS2_STATE	"Estado Ins2"
+    PATIENT.T_INS2_TYPE		"Tipo Ins2"
+    PATIENT.T_INS2_ZIP		"Ins2 Zip"
+
+    PATIENT.T_INS3_ADDRESS1	"Endereço Ins3"
+    PATIENT.T_INS3_CITY		"Ins3 Cidade"
+    PATIENT.T_INS3_GROUP_NO	"Grupo Ins3 Nº"
+    PATIENT.T_INS3_NAME		"Nome Ins3"
+    PATIENT.T_INS3_POLICY_NO	"Política Ins3 Não"
+    PATIENT.T_INS3_STATE	"Estado Ins3"
+    PATIENT.T_INS3_TYPE		"Tipo Ins3"
+    PATIENT.T_INS3_ZIP		"Ins3 Zip"
+
+    T_HL7_MESSAGE_OUT.WEB_ORDER_ID	"ID do pedido da Web"
+
+    T_WEB_ORDERS		"Pedido da Web"
+
+    V_CUSTOMER_PATIENT.T_ETHNICITY	"Etnia"
+    V_CUSTOMER_PATIENT.T_PRACTITIONER	"Praticante"
+    V_CUSTOMER_PATIENT.T_RACE		"Raça"
+
+
+    V_USERS_CUST.T_CITY		"Cidade"
+    V_USERS_CUST.T_STATE		"Estado"
+    V_USERS_CUST.T_ZIPCODE		"Código postal"
+
+    V_USERS_CUSTPRACT.T_CITY		"Cidade"
+    V_USERS_CUSTPRACT.T_STATE		"Estado"
+    V_USERS_CUSTPRACT.T_ZIPCODE	"Código postal"
+    V_USERS_CUSTPRACT.T_NPI		"NPI"
+
+    /* NLS for Visual Workflow buttons */
+
+    VWF_WEBORDERSRPTS_WEB_ORDER_CREATEButtontitle		"Criar um pedido"
+    VWF_WEBORDERSRPTS_WEB_ORDER_REQ_REPRINTButtontitle		"Reimprimir Relatório de Requisição"
+
+    /* NLS for subroutines */
+    T_CHTAuditWebOrderMsgInCreated	"HL7 Mensagem criada."
+    T_CHTAuditWebOrderMsgInFailed	"Erro: Falha na inserção da mensagem HL7."
+
+    T_CHTErrorWebOrderHL7SendMsgInUpdate	"Falha ao gravar o código da mensagem HL7 em T_WEB_ORDERS para o ID do pedido da web"
+    T_CHTErrorEmptySelection			"Seleção vazia"
+    T_CHTErrorNoWebOrderForms			"Nenhum formulário de pedido disponível. Entre em contato com o administrador do LIMS."
+    T_CHTErrorWebOrderRequisitionReprint	"Não foi possível exibir a requisição para o pedido da web {webOrderID}. Confirme se a última requisição está fechada e tente novamente."
+    T_CHTErrorWebOrderNotInContext		"ID do pedido não disponível para este pedido. Entre em contato com o administrador do LIMS."
+    T_CHTErrorWebOrderNotSubmittedHeader	"Pedido não enviado pelo(s) seguinte(s) motivo(s):"
+    T_CHTErrorWebOrderNotSubmittedTubeID	"O ID do tubo já está em uso."
+    T_CHTErrorWebOrderNotSubmittedSubPract	"O apresentador/praticante é obrigatório."
+    T_CHTErrorWebOrderNotSubmittedTests	 	"Nenhum teste ou painel solicitado."
+    T_CHTErrorWebOrderSubmittedHeader		"A seguinte ordem será enviada:"
+    T_CHTErrorWebOrderSubmittedFooter		"Você NÃO poderá editar após o envio. Continuar?"
+    T_CHTErrorWebOrderHL7OutUpdate		"Não foi possível atualizar HL7_MESSAGE_OUT para pedido na web"
+    T_CHTErrorWebOrderHL7InInsert		"Falha no InsertTable para T_HL7_MESSAGE_OUT no pedido da web"
+    T_CHTErrorWebOrderRequisitionDisplay	 "Não foi possível exibir a requisição para o pedido da web {webOrderID}. Confirme se a última requisição está fechada. {crlf}O pedido SERÁ ENVIADO. Para visualizar a requisição, use 'Reprint Order Requisition.'"
+    T_CHTMsgWebOrderPatientSearchMissingInfoHeader	"Não é possível executar a pesquisa. Por favor, verifique o seguinte:"
+    T_CHTMsgWebOrderPatientSearchMissingSubmitter	"O remetente é inserido na guia Amostra."
+    T_CHTMsgWebOrderPatientSearchMissingPatientHeader	"Pelo menos UM dos seguintes é inserido na guia Paciente:"
+    T_CHTTitlePatientIdentifier 			"Identificador do paciente"
+    T_CHTTitleSocialSecurityNumber 			"Número da Segurança Social"
+    T_CHTMsgWebOrderPatientSearchFirstLastDOB 			"Pelo menos DOIS Nome, Sobrenome ou Data de Nascimento"
+    T_CHTMsgWebOrderPatientSearchNoMatches	"Nenhuma correspondência de paciente encontrada."
+
+    T_CHTTitleSelectWebOrderCopyType	"Próximo envio: selecione as informações para copiar do último envio #"
+    T_CHTTitleSelectWebOrderCopyMin	"Copie apenas informações do provedor ({practitionerFullName})"
+    T_CHTTitleSelectWebOrderCopyMax	"Copiar informações do provedor e do paciente ({practitionerFullName}/{patientFullName})"
+    T_CHTTitleSelectWebOrderCopyNone	"Não copie (formulário em branco)"
+    T_CHTTitleSelectWebOrderForm	"Selecione o formulário de pedido"
+
+    T_CHTVWFWebOrderSubmitValHeader		"O seguinte pedido será enviado:<br><br>Você NÃO poderá editar após o envio. Continuar?"
+END

@@ -1,0 +1,86 @@
+﻿STRINGTABLE
+BEGIN
+	T_VWAdvSchToggleTitle			"Search..."
+	T_VWAdvSchStartDateTitle			"Ordered On Start Date"
+	T_VWAdvSchEndDateTitle			"Ordered On End Date"
+	T_VWAdvSchLoggedStartDateTitle			"Logged In Start Date"
+	T_VWAdvSchLoggedEndDateTitle			"Logged In End Date"
+	T_VWAdvSchCreatedStartDateTitle			"Created On Start Date"
+	T_VWAdvSchCreatedEndDateTitle			"Created On End Date"
+	T_VWAdvSchProjectNumTitle			"Project Number"
+	T_VWAdvSchOrderNumTitle			"Order Number"
+	T_VWAdvSchSampleLabelIDTitle			"Label ID"
+	T_VWAdvSchHideRevwdTitle			"Hide Reviewed Samples"
+	T_VWAdvSchShowRevwdTitle			"Show Reviewed Samples"
+	T_VWAdvSchVerifCodeTitle			"Verification Code"
+	T_VWAdvSchVerifCodeLabel			"* provided in the notification email sent to  you"
+	T_VWAdvSchPatFirstNameTitle			"Patient First Name"
+	T_VWAdvSchPatLastNameTitle			"Patient Last Name"
+	T_VWAdvSchPatFullNameTitle			"Patient Full Name"
+	T_VWAdvSchPatMobileTitle			"Patient Mobile Number"
+	T_VWAdvSchPatEmailTitle			"Patient email"
+	T_VWAdvSchPatDOBTitle			"Patient Birth Date"
+	T_VWAdvSchPatDOBLabel			"* dd-mm-yyyy"
+	T_VWAdvSchPatSSNTitle			"Patient SSn"
+	T_VWAdvSchPatExtIDTitle			"Patient National ID/Passport#"
+	T_VWAdvSchPatUHIDTitle			"Patient LIMS ID"
+	T_VWAdvSchSubmitterFullNameTitle			"Submitter Full Name"
+	T_VWAdvSchSubmitterNameTitle			"Submitter"
+	T_VWAdvSchDocFirstNameTitle			"Dr. First Name"
+	T_VWAdvSchDocLastNameTitle			"Dr. Last Name"
+	T_VWAdvSchDocFullNameTitle			"Dr. Full Name"
+	T_VWAdvSchDocNPITitle			"Dr. NPI"
+	T_VWAdvSchDocMobileTitle			"Dr. Mobile Number"
+	T_VWAdvSchDocEmailTitle			"Dr. email"
+	T_VWAdvSchVerifyButton			"Verify"
+	T_VWAdvSchDownloadButton			"Download Results"
+	T_VWAdvSchViewButton			"Results Results"
+	T_VWAdvSchSearchButton			"Search"
+	T_VWAdvSchResetButton			"Reset"
+	T_VWAdvSchDeliveryButton			"Deliver Report"
+	T_VWAdvSchDeliveryToTitle			"Deliver To"
+
+
+	T_VWAdvSchContactTypeTitle			"Contact Type"
+	T_VWAdvSchContactOpenTitle			"Only Open/Active"
+	T_VWAdvSchContactClosedTitle			"Only Closed"
+
+
+	T_VWAdvSchTestTitle			"Analysis/Test Name"
+	T_VWAdvSchLabTitle			"Laboratory"
+	T_VWAdvSchReportsOrdersTypeTitle			"Show Order Reports"
+	T_VWAdvSchReportsProjectTypeTitle			"Show Project Reports"
+	T_VWAdvSchReportsSampleTypeTitle			"Show Sample Reports"
+	T_VWAdvSchSampleStatusShowAllTitle			"Show all..."
+	T_VWAdvSchSampleStatusTitle			"Sample Status"
+	T_VWAdvSchSampleIDTitle			"Sample ID"
+
+	T_VWAdvSchPatGenderTitle			"Patient Gender"
+	T_VWAdvSchPatGenderAllTitle			"All"
+	T_VWAdvSchPatGenderMaleTitle			"Male"
+	T_VWAdvSchPatGenderFemaleTitle			"Female"
+
+	T_VWAdvSchReportPurposeTitle			"Report Purpose"
+	T_VWAdvSchReportStatusTitle			"Report Status"
+	T_VWAdvSchReportStatusAllTitle			"All"
+	T_VWAdvSchReportStatusReportedTitle			"Reported"
+	T_VWAdvSchReportStatusNotReportedTitle			"Not Reported"
+
+	T_VWAdvSchReportObjectClassTitle			"Report Object Class"
+	T_VWAdvSchReportObjectClassAllTitle			"Show all..."
+
+
+	T_VWAdvSchPrintStatusTitle			"Report Print Status"
+	T_VWAdvSchPrintStatusAllTitle			"All"
+	T_VWAdvSchPrintStatusPrintedTitle			"Printed"
+	T_VWAdvSchPrintStatusNotPrintedTitle			"Not Printed"
+
+	T_VWAdvSchButtonDescriptions			"Run,Reset"
+	T_VWAdvSchButtonTitles			"Search the database using criteria,Reset search"
+
+
+	T_VWAdvSchTabMenuSearchDescript			"<i class='mdi mdi-database-search' style='color:7f7f7f;font-size:16px;'></i>&nbsp;&nbsp;Search"
+
+	T_VWAdvSchTabMenuDescriptions			"<i class='mdi mdi-chart-timeline' style='color:7f7f7f;font-size:16px;'></i>&nbsp;&nbsp;TAT,<i class='mdi mdi-database-search' style='color:7f7f7f;font-size:16px;'></i>&nbsp;&nbsp;Search,<i class='mdi mdi-briefcase-account' style='color:7f7f7f;font-size:16px;'></i>&nbsp;&nbsp;Functions"
+
+END
