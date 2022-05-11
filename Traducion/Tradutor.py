@@ -18,10 +18,12 @@ import time
 #In each .txt at 'ParaTraduzir', it is forbidden to exist only one quitation marks, so in order to the script works
 #each line must contain 2 or none quotation marks
 
-#Check for googletrans reference to find your language code
-sourceLangue ='' 
-destinationLangue = ''
-pathToPy = "C:\\Users\\Energia\\Documents\\gui\\Traducion\\"#Your path to python file
+#Whant To Translate for other langues ? 
+sourcePrefix="EN_" # keep the underscores and change the _
+destinationPrefix="PT_"
+sourceLangue='en'
+destinationLangue='pt'
+pathToPy = "C:\\Users\\Energia\\Documents\\NLS_TRAD-main\\NLS_TRAD-main\\Traducion\\"#Your path to python file
 
 
 fil = glob.glob(pathToPy+"ParaTraduzir\\*.txt")# find every .txt in 'ParaTraduzir'
@@ -58,8 +60,8 @@ for file in fil:
             return exception,exception
 
 
-    #It assumes that you are translating from english to Portuguese
-    with open(file.replace("ParaTraduzir\\EN_","Traduzidos\\PT_"),mode='w',encoding='utf-8')as w:
+    #It assumes that you are translating from english to Portuguese, Change the termination of EN and PT 
+    with open(file.replace("ParaTraduzir\\"+sourcePrefix,"Traduzidos\\"+destinationPrefix),mode='w',encoding='utf-8')as w:
         trad = Translator()
         indx=0 
         
@@ -72,7 +74,8 @@ for file in fil:
                 w.write(line)
                 print('No Quotes: '+str(indx))
             else:
-                traducao = trad.translate(strToTr,src='en',dest='pt') 
+                
+                traducao = trad.translate(strToTr,src=sourceLangue,dest=destinationLangue) 
                 mi = vec[0]
                 
                 ma=vec[1]
