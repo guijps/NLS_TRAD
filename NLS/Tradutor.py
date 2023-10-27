@@ -8,8 +8,7 @@ import re
 import time
 
 #========================CAUTION=============================================
-#   During some tests without the 'sleep' time, the code shut down my router.
-#   I think that it full filled the router's buffer, and stoped the services.
+#   During some tests without the 'sleep' time, the code shut down my internet connection.
 #   So inside the code it has one counter that for each 300 lines 
 #   read, it stops for 3 seconds. You may adjust it as you wish.
 #========================CAUTION=============================================
