@@ -23,7 +23,7 @@ sourcePrefix="EN_" # keep the underscores and change the _
 destinationPrefix="PT_"
 sourceLangue='en'
 destinationLangue='pt'
-pathToPy = "C:\\Users\\Energia\\Documents\\NLS_TRAD-main\\NLS_TRAD-main\\Traducion\\"#Your path to python file
+pathToPy = ""#Your path to python file
 
 
 fil = glob.glob(pathToPy+"ParaTraduzir\\*.txt")# find every .txt in 'ParaTraduzir'
