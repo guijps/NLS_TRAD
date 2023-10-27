@@ -86,9 +86,9 @@ for file in fil:
                 
                 w.write(strToWrite.encode("utf-8").decode('utf-8'))
             indx+=1
-        #This can full fill your routers buffers
         #========================CAUTION=============================================
-        #without it, in some large files, this code may shut down your router
+        #This may trigger some safety point of your router.
+        #without it, in some large files, this code may shut down your internet connection.
             if(indx%300==0):
                 print('sleeping for safety')
                 time.sleep(3)
